@@ -34,8 +34,26 @@ color: yellow;
 <body>
 <div class="container">
 <h1>Welcome to Bible verses ! Where i will explain what the bible verses means and obviously put the bible verses !</h1>
-
 </div>
+        <h1>Verset du jour</h1>
+    <p id="verset"></p>
+
+    <script>
+        // Liste des versets
+        const versets = [
+            "Philippians 4:13: I can do all things through Christ who strenghtens me.",
+            "Genesis 1:1: In the beginning, God created the heavens and the earth.",
+            "Jeremiah 29:11: For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future.",
+            "John 4:2: This is how you know the Spirit of God: Everyone who says, “Jesus Christ has truly become human,” is God’s"
+        ];
+
+        // Obtenir la date du jour
+        let date = new Date();
+        let index = date.getDate() % versets.length; // Change chaque jour
+
+        // Afficher le verset du jour
+        document.getElementById("verset").innerText = versets[index];
+    </script>
 
 </body>
 <body>
