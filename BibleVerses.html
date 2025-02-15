@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+"Verset du jour"<!DOCTYPE html>
 <html>
 <head>
 <title>Bible Verses</title>
@@ -6,7 +6,7 @@
 <style>
     body {
 background-color: lightseagreen;
-background-image: url(https://th.bing.com/th/id/R.cd338434f24b0ea3df0a7f8e8036047a?rik=2dX2nWPm3UZP%2fw&amp;pid=ImgRaw&amp;r=0);
+
 }
 h1{
    color: black
@@ -34,21 +34,31 @@ color: yellow;
 <body>
 <div class="container">
 <h1>Welcome to Bible verses ! Where i will explain what the bible verses means and obviously put the bible verses !</h1>
-
 </div>
+    <div class="container">
+        <h1>Verset du jour</h1>
+    <p id="verset"></p>
+
+    <script>
+        // Liste des versets
+        const versets = [
+            "Philippians 4:13: I can do all things through Christ who strenghtens me.",
+            "Genesis 1:1: In the beginning, God created the heavens and the earth.",
+            "Jeremiah 29:11: For I know the plans I have for you,' declares the Lord, 'plans to prosper you and not to harm you, plans to give you hope and a future.",
+            "John 4:2: This is how you know the Spirit of God: Everyone who says, “Jesus Christ has truly become human,” is God’s"
+        ];
+
+        // Obtenir la date du jour
+        let date = new Date();
+        let index = date.getDate() % versets.length; // Change chaque jour
+
+        // Afficher le verset du jour
+        document.getElementById("verset").innerText = versets[index];
+    </script>
+    </div>
 
 </body>
 <body>
-    <div class="container">
-        <h1>Daily Verse</h1>
-        <h2>Psalm 4:8</h2>
-        <h3>In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety.</h3>
-        <br>
-        <h1>Explanation: This verse is a powerful reminder of God's protection and peace. As you prepare for sleep, it’s comforting to know that you are safe in God's care. It encourages trust in His protection, allowing you to rest without fear. The Psalmist expresses that true peace comes only from God, who provides security and safety, even through the night.
-            This is a verse that offers both a sense of calm and reassurance, perfect for when you're winding down and seeking peace before rest.</h1>
-
-    </div>
-    <br>
     <div class="container">
         <h2>Philippians 4:13</h1>
         <h3>I can do all things through Christ, who strenghtens me.</h3>
@@ -169,5 +179,24 @@ color: yellow;
         <br>
         <h1>This verse reminds us to entrust our worries to God, knowing that He cares deeply for us and is capable of handling our burdens. These verses offer encouragement, guidance, and a reminder of God’s presence in our daily lives.</h1>
     </div>
+     <div class="container">
+        <h2>Psalm 4:8</h2>
+        <h3>In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety.</h3>
+        <br>
+        <h1>Explanation: This verse is a powerful reminder of God's protection and peace. As you prepare for sleep, it’s comforting to know that you are safe in God's care. It encourages trust in His protection, allowing you to rest without fear. The Psalmist expresses that true peace comes only from God, who provides security and safety, even through the night.
+            This is a verse that offers both a sense of calm and reassurance, perfect for when you're winding down and seeking peace before rest.</h1>
+     </div>
+    <div class="container">
+        <h2>Revelation 12:7-9</h2>
+        <h3>Then war broke out in heaven. Michael and his angels fought against the dragon, and the dragon and his angels fought back. But he was not strong enough, and they lost their place in heaven. The great dragon was hurled down—that ancient serpent called the devil, or Satan, who leads the whole world astray. He was hurled to the earth, and his angels with him.</h3>
+        <br>
+        <h1>This verse explain how Satan(Lucifer) and his demons lost against God when he through he was better and stronger than God.</h1>
+    </div>
+     <div class="container">
+        <h2>1 John 4:2:</h2>
+        <h3>This is how you know the Spirit of God: Everyone who says, “Jesus Christ has truly become human,” is God’s</h3>
+        <br>
+        <h1>This verse explain how to know if someone Godly</h1>
+     </div>
 </body>
 </html>
