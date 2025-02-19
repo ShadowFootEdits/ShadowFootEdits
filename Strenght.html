@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guide</title>
+    </head>
+    <style>
+ h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(0, 109, 100, 0.9); /* Ajout d'un fond semi-transparent */
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+    color: white; /* Pour s'assurer que le texte est lisible */
+}
+
+body {
+    background-image: url(https://th.bing.com/th/id/OIP.WbARo_nK1YPQsxbmoS9DdAHaDv?rs=1&amp;pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#verset {
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px; /* Ajout d'un padding pour éviter que le texte touche les bords */
+}
+</style>
+
+    <body>
+      <div class="container">
+        <h1>Welcome to Daily Strengh prayers: here is your daily Strengh prayer !</h1>
+        <br>
+        <h1>Daily Strengh Prayer:</h1>
+        <h2 id="verset"></h2>
+    
+        <script>
+            // Liste des versets
+            const versets = [
+                "Lord, I am weary, but in You, I find my strength. Renew my spirit, strengthen my heart, and give me the courage to move forward. I put my trust in You. Amen.",
+                "Father, the trials are heavy, but I know You are with me. Fill me with Your power, help me to stand firm, and guide me through every storm. Amen.",
+                "Jesus, when I feel weak, remind me that Your strength is made perfect in my weakness. Help me rely on You and not my own understanding. Amen",
+                "Lord, when I feel like giving up, lift me up with Your mighty hand. Give me endurance, perseverance, and faith to keep going. Amen.",
+                "Father, I face challenges beyond my control, but I know You are greater. Strengthen me to overcome, and let Your peace fill my heart. Amen.",
+                "God, I need Your strength today. When I am tired, give me energy. When I am afraid, give me courage. When I am uncertain, give me faith. Amen.",
+                "Lord, life is hard, but You are my rock. Help me not to be shaken by difficulties but to trust in Your power to sustain me. Amen.",
+                "Jesus, I surrender my struggles to You. Fill me with Your presence, renew my spirit, and let Your strength carry me through. Amen.",
+                "Father, remind me that I do not fight alone. You are my protector, my defender, and my source of strength. I rest in You. Amen.",
+                "Lord, no matter what comes my way, I know You are in control. Strengthen my heart, increase my faith, and help me walk in Your power. Amen.",
+        ]
+    
+            // Obtenir la date du jour
+            let date = new Date();
+            let index = date.getDate() % versets.length; // Change chaque jour
+    
+            // Afficher le verset du jour
+            document.getElementById("verset").innerText = versets[index];
+        </script>
+      </div>
+    </body>
+</html>
