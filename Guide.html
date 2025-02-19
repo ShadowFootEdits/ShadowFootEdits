@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guide</title>
+    </head>
+    <style>
+ h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(0, 109, 100, 0.9); /* Ajout d'un fond semi-transparent */
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+    color: white; /* Pour s'assurer que le texte est lisible */
+}
+
+body {
+    background-image: url(https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale/jackets/9781591588474.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#verset {
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px; /* Ajout d'un padding pour éviter que le texte touche les bords */
+}
+</style>
+
+    <body>
+      <div class="container">
+        <h1>Welcome to Daily Guide prayers: here is your daily guide prayer !</h1>
+        <br>
+        <h1>Daily Guide Prayer:</h1>
+        <h2 id="verset"></h2>
+    
+        <script>
+            // Liste des versets
+            const versets = [
+                "Philippians 4:13: I can do all things through Christ who strenghtens me Help me trust that You will lead me beside still waters. Strengthen my faith when doubt creeps into my heart. Give me wisdom to make choices that align with Your plan. I surrender my plans and desires to You, Lord. Lead me in the way everlasting. Amen..",
+                "Lord, my thoughts are clouded, and my heart feels heavy. I seek Your wisdom to understand what You want for me. The world is full of distractions, but I desire Your truth. Help me to hear Your voice above the noise of my worries. Give me peace in knowing that You are in control. When I am unsure, remind me that You are not a God of confusion. Let Your Holy Spirit reveal the next steps I should take. I trust that You have a plan greater than I can imagine. Teach me to rest in Your guidance and not rely on my own understanding. Thank You for leading me each day. Amen.",
+                "Father, in a world full of choices, I seek Your wisdom. Help me to distinguish between truth and deception. Let me not be swayed by emotions or personal desires. Give me a heart that longs for righteousness and wisdom. When decisions arise, remind me to seek You first. Surround me with godly counsel that speaks Your truth. Close doors that lead me away from Your will. Open doors that bring me closer to Your purpose. I trust that You will guide me when I walk in obedience. Lead me, Lord, and let Your will be done in my life. Amen.",
+                "God, I know that Your timing is perfect. Yet, my heart longs for answers and direction now. Teach me to wait on You with a heart full of trust. Give me patience when I feel restless and uncertain. Help me remember that waiting is not wasted time. You are always working, even when I do not see it. Let my faith grow as I surrender my timeline to You. Help me find peace in the waiting, knowing You are near. Strengthen me so I do not rush ahead of Your plan. I place my future in Your hands, Lord. Amen.",
+                "Lord, following You is not always easy. Your path is narrow, and the world offers tempting shortcuts. Help me to stand firm in my faith, even when it is difficult. When the road feels lonely, remind me that You are with me. Give me the courage to say yes to Your call. Strengthen me to reject anything that leads me away from You. Let me not grow weary in doing what is right. Your way leads to life, even when it seems hard. Keep my heart fixed on the reward of eternal life with You. I choose to follow You today and always. Amen.",
+                "Father, I face many temptations each day. I know the enemy wants to lead me astray. But I belong to You, and I desire to walk in holiness. Help me recognize when sin is trying to deceive me. Give me strength to turn away and walk in righteousness. Fill my heart with a hunger for Your Word. Remind me that no temptation is greater than Your power. Help me lean on You instead of my own strength. Let me always seek Your presence when I feel weak. Thank You for being my refuge and my protector. Amen.",
+                "Lord, I know You created me with a purpose. I don’t want to waste the gifts You have given me. Show me how to use my talents for Your glory. Let my work and actions reflect Your goodness. Help me serve others with love and humility. Keep me from chasing meaningless things that do not satisfy. Let my life be a testimony of Your grace and power. Open doors for me to fulfill the calling You have placed in my heart. When I doubt myself, remind me that You equip those You call. Use me, Lord, for Your kingdom. Amen.",
+                "Heavenly Father, I know that Your plans are higher than mine. Yet, sometimes I struggle to trust in Your timing and ways. Help me surrender my own desires and expectations to You. Even when I don’t understand, give me faith to follow You. Remind me that You are working all things for my good. When I feel anxious about the future, let Your peace fill my heart. Teach me to walk in obedience, even when the road is uncertain. Let me seek You first in all my decisions and actions. Shape my heart to desire what You desire for me. I trust You, Lord, with my life and my future. Amen.",
+                "Lord, I come before You, seeking wisdom and guidance. My heart is full of questions, and I do not want to rely on my own understanding. Show me the path that leads to righteousness and peace. Give me discernment to recognize what is right and what is wrong. Close the doors that are not meant for me, even if they seem good. Open the doors that align with Your perfect will for my life. Surround me with wise counsel that speaks Your truth. Help me make choices that bring glory to Your name. Let my decisions be rooted in faith and not in fear. Thank You, Lord, for leading me every step of the way. Amen.",
+                "Father, I feel lost and uncertain in the struggles I face. The road ahead seems difficult, and I do not know what to do. But I know that You are my refuge, my strength, and my guide. Even in darkness, Your light leads me forward. Help me trust that You are working, even when I do not see it. Give me the patience to endure and the wisdom to walk in faith. When fear and doubt try to take over, remind me of Your promises. You have never failed me, and I know You never will. Lead me, Lord, through this storm, and bring me closer to You. I place my hope in You alone. Amen.",
+            ];
+    
+            // Obtenir la date du jour
+            let date = new Date();
+            let index = date.getDate() % versets.length; // Change chaque jour
+    
+            // Afficher le verset du jour
+            document.getElementById("verset").innerText = versets[index];
+        </script>
+      </div>
+    </body>
+</html>
