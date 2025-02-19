@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guide</title>
+    </head>
+    <style>
+ h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(0, 109, 100, 0.9); /* Ajout d'un fond semi-transparent */
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+    color: white; /* Pour s'assurer que le texte est lisible */
+}
+
+body {
+    background-image: url(https://th.bing.com/th/id/OIP.WbARo_nK1YPQsxbmoS9DdAHaDv?rs=1&amp;pid=ImgDetMain);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#verset {
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px; /* Ajout d'un padding pour éviter que le texte touche les bords */
+}
+</style>
+
+    <body>
+      <div class="container">
+        <h1>Welcome to Daily Repent prayers: here is your daily Repent prayer !</h1>
+        <br>
+        <h1>Daily Repent Prayer:</h1>
+        <h2 id="verset"></h2>
+    
+        <script>
+            // Liste des versets
+            const versets = [
+                "Lord, I have sinned against You, I come with a humble heart, Wash me clean, make me new, Remove my guilt, take my shame, Fill me with Your Spirit, Lead me on the path of righteousness, Thank You for Your mercy. Amen.",
+                "Father, I repent of my wrongs, Cleanse my heart, make it pure, Take away my sinful desires, Fill me with love and truth, Help me walk in Your light, Strengthen me to turn from sin, I surrender all to You. Amen.",
+                "Lord, I am weak but You are strong, I have fallen, but I rise in Your grace, Give me strength to resist temptation, Help me turn from my sinful ways, Let Your love transform my heart, Guide my steps toward holiness, I trust in Your power to change me. Amen.",
+                "Father, I lay my sins before You, I no longer want to walk in darkness, Wash me in the blood of Jesus, Give me a new heart and a new spirit, Help me live according to Your will, Thank You for Your endless grace, I choose to follow You today. Amen.",
+                "Lord, I am sorry for my sins, Not just in words, but from my heart, Change my thoughts, change my ways, Help me live in obedience to You, Remove every sin that separates us, Fill me with a desire for righteousness, I turn back to You completely. Amen.",
+                "Jesus, I cry out to You, Break the chains of sin in my life, Set me free from every stronghold, Give me victory over my weaknesses, Let Your Spirit lead me to holiness, I reject my old ways and turn to You, Thank You for Your saving grace. Amen.",
+                "Lord, have mercy on me, I have failed You many times, But Your grace is greater than my sins, Forgive me, cleanse me, restore me, Help me live in Your righteousness, Fill me with Your peace and love, I trust in Your unfailing mercy. Amen.",
+                "Father, renew my mind and heart, Remove every sinful desire in me, Let Your Word be my guide, Help me walk in purity and truth, Make me more like Jesus, Strengthen my faith each day, I turn to You completely. Amen.",
+                "Lord, I humble myself before You, I confess my sins and weaknesses, I need Your grace to change, Teach me to live in Your truth, Lead me on the path of holiness, Help me never turn back to sin, I put my trust in You alone. Amen.",
+                "Jesus, I surrender my past to You, Forgive me for all my sins, Wash me clean and make me whole, Fill me with Your Holy Spirit, Help me walk in newness of life, Let Your light shine through me, I give my life fully to You. Amen.",
+        ]
+    
+            // Obtenir la date du jour
+            let date = new Date();
+            let index = date.getDate() % versets.length; // Change chaque jour
+    
+            // Afficher le verset du jour
+            document.getElementById("verset").innerText = versets[index];
+        </script>
+      </div>
+    </body>
+</html>
